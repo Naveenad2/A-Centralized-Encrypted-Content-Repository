@@ -1,0 +1,195 @@
+/* Import fonts or global styles if needed */
+
+.main-page {
+  /* Your existing styles for the main page */
+
+  position: relative; /* Set position to relative to enable absolute positioning for modal */
+}
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  backdrop-filter: blur(5px); /* Apply blur effect to the background */
+  z-index: 1; /* Place the backdrop above the content */
+}
+
+/* MainPage.css */
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  width: 300px; /* Adjust the width as needed */
+}
+
+  
+  .content-section {
+    padding: 20px;
+  }
+  
+  .content-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .content-filters button {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .content-filters button.active {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(348px, 1fr)); /* Adjusted width */
+    gap: 30px; /* Increased gap */
+    height: 148px;
+  }
+  
+  .content-item {
+    background-color: #cee5ff;
+    border-radius: 10px;
+    padding: 20px; /* Increased padding */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow by default */
+  }
+  
+  .content-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-item h3 {
+    margin: 0;
+    font-size: 20px; /* Adjusted font size */
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .content-item p {
+    margin: 0;
+    font-size: 16px; /* Adjusted font size */
+    color: #666;
+  }
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .nav-link:hover {
+    color: #ffc107;
+  }
+  
+  /* Styling for the content section */
+  .content-section {
+    padding: 20px; /* Increased padding */
+    max-width: 1200px; /* Center the content section */
+    margin: 0 auto;
+  }
+  
+  /* Add media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  .nav-link:hover {
+    color: #ffc107;
+  }
+
+  .button-logout {
+
+    background: #007bff;
+    border: transparent;
+    color: white;
+    font-size: initial;
+    font-weight: bold;
+
+}
+  
+  /* Add media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+   
+  }
+  /* Add more specific styling as needed */
+  
