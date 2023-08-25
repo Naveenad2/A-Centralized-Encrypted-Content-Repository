@@ -19,4 +19,6 @@ public class UserModel {
 
     private String password;
 
+    public UserModel(String testuser, String s, String s1, String password) {
+    }
 }
