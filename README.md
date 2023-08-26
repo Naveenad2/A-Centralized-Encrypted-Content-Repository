@@ -56,10 +56,7 @@ The application consists of both a frontend and a backend, and it can be contain
 ![Screenshot 1](/screenshots/screenshot1.png)
 ![Screenshot 2](/screenshots/screenshot2.png)
 
-## Contributors
 
-- Your Name
-- Collaborator Name (if applicable)
 
 ## License
 
